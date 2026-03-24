@@ -10,10 +10,10 @@ export const days = [
     summary:
       'Welcome back to robotics in remote mode; meet Karel, set up CodeHS, and review basic movement and functions.',
     moodGif:
-      'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXl6M2Z3Z200ZndmZ3c4d3d1cTZmYjA1OTNrai9vNTU1eGFnMGF2OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKzyQGN6jG4r0Qo/giphy.gif', // placeholder dog/robot gif
+      'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnVteDE1bzgwYWRrNDUydW5vYWttd3lrYmJxcjVvZTQxMGJweHN4MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jTfSJjWrn2S5VYhZ3N/giphy.gif', // placeholder dog/robot gif
     icon:
-      'https://cdn.codehs.com/uploads/7b7b0c0d2b1a8e475c-karel-dog-icon.png', // example placeholder, swap to real asset
-    iframeUrl: 'https://codehs.com/hourofcode/karel', // or a specific playlist / doc
+      'https://uploads.codehs.com/8491c099a07c2bf7b3d5775dcfe2f07b', // example placeholder, swap to real asset
+    iframeUrl: 'https://codehs.com/app/assignments/section/849749', // or a specific playlist / doc
     lessonPlan: {
       bigIdea:
         'Shift from physical VEX robots to virtual robots while building core programming habits with Karel.',
@@ -35,7 +35,7 @@ export const days = [
         {
           type: 'codehs',
           label: 'CodeHS – Intro to Programming with Karel (1.1–1.5)',
-          url: 'https://codehs.com/hourofcode/karel'
+          url: 'https://codehs.com/app/assignments/section/849749'
         },
         {
           type: 'doc',
@@ -62,7 +62,7 @@ export const days = [
     moodGif:
       'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3hmYXJ2cGZrcnNrdmJwZjZsZzFlbDR0d2djc2EwYnA1Z3M1NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7btPCcdNniyf0ArS/giphy.gif', // hurdles / thinking gif
     icon:
-      'https://cdn.codehs.com/uploads/3fbb8a1c7a1234-top-down-design-icon.png',
+      'https://uploads.codehs.com/8491c099a07c2bf7b3d5775dcfe2f07b',
     iframeUrl:
       'https://codehs.com/editor/playlist/video/540744/3832/2640', // adjust to your specific 1.6 video or lesson
     lessonPlan: {
@@ -97,7 +97,7 @@ export const days = [
         {
           type: 'playlist',
           label: 'ACS Playlist – Exercise 1.3: Functions Tell A Story (T)',
-          url: 'https://codehs.com'
+          url: 'https://codehs.com/student/3408794/section/849749/assignment/53038580'
         },
         {
           type: 'video',
@@ -119,7 +119,7 @@ export const days = [
     moodGif:
       'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnA1N3RhZmN2OW1uZ2ZteTRuM2E4cGlsOWdpc3Z3aGozN3V3NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohzdIuqJoo8QdKlnW/giphy.gif', // celebration gif
     icon:
-      'https://cdn.codehs.com/uploads/4c7e9b9d8e-karel-finish-story-icon.png',
+      'https://uploads.codehs.com/8491c099a07c2bf7b3d5775dcfe2f07b',
     iframeUrl: 'https://codehs.com', // swap in your ACS playlist or CodeHS exercise link
     lessonPlan: {
       bigIdea:
