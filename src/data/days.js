@@ -10,10 +10,27 @@ export const days = [
     summary:
       'Welcome back to robotics in remote mode; meet Karel, set up CodeHS, and review basic movement and functions.',
     moodGif:
-      'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnVteDE1bzgwYWRrNDUydW5vYWttd3lrYmJxcjVvZTQxMGJweHN4MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jTfSJjWrn2S5VYhZ3N/giphy.gif', // placeholder dog/robot gif
+      'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnVteDE1bzgwYWRrNDUydW5vYWttd3lrYmJxcjVvZTQxMGJweHN4MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jTfSJjWrn2S5VYhZ3N/giphy.gif',
     icon:
-      'https://uploads.codehs.com/8491c099a07c2bf7b3d5775dcfe2f07b', // example placeholder, swap to real asset
-    iframeUrl: 'https://codehs.com/app/assignments/section/849749', // or a specific playlist / doc
+      'https://uploads.codehs.com/8491c099a07c2bf7b3d5775dcfe2f07b',
+    iframeUrl: 'https://codehs.com/app/assignments/section/849749',
+
+    // period-specific live links
+    perPeriod: {
+      p2: {
+        meetUrl: 'https://meet.google.com/wrz-mwxt-wuh',
+        resources: [
+          // add any P2‑specific links here if needed
+        ]
+      },
+      p3: {
+        meetUrl: 'https://meet.google.com/xkm-cidj-eus',
+        resources: [
+          // add any P3‑specific links here if needed
+        ]
+      }
+    },
+
     lessonPlan: {
       bigIdea:
         'Shift from physical VEX robots to virtual robots while building core programming habits with Karel.',
@@ -60,11 +77,35 @@ export const days = [
     summary:
       'Go deeper into Top Down Design, then use functions to tell a story with Karel.',
     moodGif:
-      'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3hmYXJ2cGZrcnNrdmJwZjZsZzFlbDR0d2djc2EwYnA1Z3M1NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7btPCcdNniyf0ArS/giphy.gif', // hurdles / thinking gif
+      'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3hmYXJ2cGZrcnNrdmJwZjZsZzFlbDR0d2djc2EwYnA1Z3M1NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7btPCcdNniyf0ArS/giphy.gif',
     icon:
       'https://uploads.codehs.com/8491c099a07c2bf7b3d5775dcfe2f07b',
     iframeUrl:
-      'https://codehs.com/editor/playlist/video/540744/3832/2640', // adjust to your specific 1.6 video or lesson
+      'https://codehs.com/editor/playlist/video/540744/3832/2640',
+
+    perPeriod: {
+      p2: {
+        meetUrl: 'https://meet.google.com/wrz-mwxt-wuh',
+        resources: [
+          {
+            type: 'playlist',
+            label: 'ACS P2 – Exercise 1.3: Functions Tell A Story (T)',
+            url: 'https://codehs.com/student/3408794/section/849749/assignment/53038580'
+          }
+        ]
+      },
+      p3: {
+        meetUrl: 'https://meet.google.com/xkm-cidj-eus',
+        resources: [
+          {
+            type: 'playlist',
+            label: 'ACS P3 – Exercise 1.3: Functions Tell A Story (T)',
+            url: 'https://codehs.com/student/3408794/section/849750/assignment/53038580'
+          }
+        ]
+      }
+    },
+
     lessonPlan: {
       bigIdea:
         'We write programs that read like a story by decomposing problems into well‑named, reusable functions.',
@@ -95,11 +136,6 @@ export const days = [
           url: 'https://codehs.gitbooks.io/introcs/content/Programming-with-Karel/top-down-design-and-decomposition.html'
         },
         {
-          type: 'playlist',
-          label: 'ACS Playlist – Exercise 1.3: Functions Tell A Story (T)',
-          url: 'https://codehs.com/student/3408794/section/849749/assignment/53038580'
-        },
-        {
           type: 'video',
           label: 'ACS Recording – Top Down Design & Storytelling',
           url: 'https://youtu.be/example-top-down-story'
@@ -117,10 +153,26 @@ export const days = [
     summary:
       'Solidify Top Down Design by finishing a Karel story that uses clear, reusable functions.',
     moodGif:
-      'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnA1N3RhZmN2OW1uZ2ZteTRuM2E4cGlsOWdpc3Z3aGozN3V3NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohzdIuqJoo8QdKlnW/giphy.gif', // celebration gif
+      'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnA1N3RhZmN2OW1uZ2ZteTRuM2E4cGlsOWdpc3Z3aGozN3V3NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohzdIuqJoo8QdKlnW/giphy.gif',
     icon:
       'https://uploads.codehs.com/8491c099a07c2bf7b3d5775dcfe2f07b',
-    iframeUrl: 'https://codehs.com', // swap in your ACS playlist or CodeHS exercise link
+    iframeUrl: 'https://codehs.com',
+
+    perPeriod: {
+      p2: {
+        meetUrl: 'https://meet.google.com/wrz-mwxt-wuh',
+        resources: [
+          // add P2 Finish‑the‑Story specific links when you have them
+        ]
+      },
+      p3: {
+        meetUrl: 'https://meet.google.com/xkm-cidj-eus',
+        resources: [
+          // add P3 Finish‑the‑Story specific links when you have them
+        ]
+      }
+    },
+
     lessonPlan: {
       bigIdea:
         'Finishing a story with Karel shows how well we can design, name, and reuse functions in a larger program.',
@@ -164,4 +216,3 @@ export const days = [
     }
   }
 ];
-
