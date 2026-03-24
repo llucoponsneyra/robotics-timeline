@@ -1,0 +1,81 @@
+.day-card {
+  width: 220px;
+  height: 160px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.day-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.45s ease, box-shadow 0.3s;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.8);
+  border-radius: 18px;
+}
+
+.day-card-inner.is-flipped {
+  transform: rotateY(180deg) translateY(-6px);
+}
+
+.day-card-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 18px;
+  padding: 0.8rem 1rem;
+}
+
+.day-card-front {
+  background: radial-gradient(circle at top left, #4c1d95, #020617);
+  border: 1px solid rgba(192, 132, 252, 0.7);
+}
+
+.day-card-back {
+  background: radial-gradient(circle at bottom right, #1f2937, #020617);
+  border: 1px solid rgba(148, 163, 184, 0.8);
+  transform: rotateY(180deg);
+}
+
+.day-badge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+.day-label {
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.7);
+}
+
+.week-label {
+  color: #e5e7eb;
+  opacity: 0.9;
+}
+
+.lesson-title {
+  font-size: 0.98rem;
+  margin-top: 0.35rem;
+}
+
+.day-card-back h4 {
+  margin: 0 0 0.25rem;
+  font-size: 0.9rem;
+  color: #a5b4fc;
+}
+
+.day-card-back p {
+  font-size: 0.8rem;
+  margin: 0.1rem 0;
+}
+
+.card-hint {
+  margin-top: 0.6rem;
+  font-style: italic;
+  color: #9ca3af;
+}
+
