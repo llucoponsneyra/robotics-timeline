@@ -1,10 +1,10 @@
 import React from 'react';
 import './LessonModal.css';
 
-export default function LessonModal({ day, onClose }) {
+export default function LessonModal({ day, period = 'p2', onClose }) {
   if (!day) return null;
 
-  const { lessonPlan = {} } = day;
+  const { lessonPlan = {}, perPeriod = {} } = day;
   const {
     bigIdea,
     agenda = [],
@@ -13,6 +13,10 @@ export default function LessonModal({ day, onClose }) {
     asyncNotes,
     resources = []
   } = lessonPlan;
+
+  const periodData = perPeriod[period] || {};
+  const periodResources = periodData.resources || [];
+  const meetUrl = periodData.meetUrl;
 
   return (
     <div className="lesson-modal-backdrop" onClick={onClose}>
@@ -27,21 +31,15 @@ export default function LessonModal({ day, onClose }) {
         <header className="lesson-header">
           {day.icon && (
             <div className="lesson-icon-wrapper">
-              <img
-                src={day.icon}
-                alt=""
-                className="lesson-icon"
-              />
+              <img src={day.icon} alt="" className="lesson-icon" />
             </div>
           )}
           <div className="lesson-header-text">
-            <p className="lesson-week">{day.week} • {day.dateLabel}</p>
+            <p className="lesson-week">
+              {day.week} • {day.dateLabel} • {period === 'p2' ? 'Period 2' : 'Period 3'}
+            </p>
             <h2>{day.title}</h2>
-            {bigIdea && (
-              <p className="big-idea">
-                {bigIdea}
-              </p>
-            )}
+            {bigIdea && <p className="big-idea">{bigIdea}</p>}
           </div>
         </header>
 
@@ -73,6 +71,21 @@ export default function LessonModal({ day, onClose }) {
           </div>
 
           <aside className="lesson-side-column">
+            {/* LIVE LESSON / MEET BUTTON */}
+            <section className="lesson-section">
+              <h3>Live Lesson</h3>
+              {meetUrl ? (
+                <button
+                  className="join-meet-btn"
+                  onClick={() => window.open(meetUrl, '_blank')}
+                >
+                  Join Google Meet – {period === 'p2' ? 'Period 2' : 'Period 3'}
+                </button>
+              ) : (
+                <p>No Meet link configured for this period.</p>
+              )}
+            </section>
+
             {objectives.length > 0 && (
               <section className="lesson-section">
                 <h3>Learning Objectives</h3>
@@ -95,18 +108,22 @@ export default function LessonModal({ day, onClose }) {
               </section>
             )}
 
+            {/* MERGED SHARED + PERIOD-SPECIFIC RESOURCES */}
             <section className="lesson-section">
               <h3>Resources</h3>
               <div className="lesson-resources">
-                {resources.length > 0 ? (
+                {resources.length + periodResources.length > 0 ? (
                   <ul>
                     {resources.map((res) => (
                       <li key={res.url}>
-                        <a
-                          href={res.url}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
+                        <a href={res.url} target="_blank" rel="noreferrer">
+                          {res.label}
+                        </a>
+                      </li>
+                    ))}
+                    {periodResources.map((res) => (
+                      <li key={res.url}>
+                        <a href={res.url} target="_blank" rel="noreferrer">
                           {res.label}
                         </a>
                       </li>
@@ -134,4 +151,3 @@ export default function LessonModal({ day, onClose }) {
     </div>
   );
 }
-

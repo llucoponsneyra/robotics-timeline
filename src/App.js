@@ -48,11 +48,15 @@ function App() {
         </div>
       </main>
 
-      <footer className="app-footer">
+            <footer className="app-footer">
         Drag, hover, and click the cards to explore this week.
       </footer>
 
-      <LessonModal day={activeDay} onClose={() => setActiveDay(null)} />
+      <LessonModal
+        day={activeDay}
+        period={selectedPeriod}
+        onClose={() => setActiveDay(null)}
+      />
     </div>
   );
 }
