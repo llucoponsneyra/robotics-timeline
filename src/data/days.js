@@ -81,7 +81,7 @@ export const days = [
     icon:
       'https://uploads.codehs.com/8491c099a07c2bf7b3d5775dcfe2f07b',
     iframeUrl:
-      'https://codehs.com/editor/playlist/video/540744/3832/2640',
+      'https://drive.google.com/file/d/1cHQsJdsJuLsTHAyCajlGTnAo9rw14AV3/view?usp=sharing',
 
     perPeriod: {
       p2: {
@@ -137,8 +137,8 @@ export const days = [
         },
         {
           type: 'video',
-          label: 'ACS Recording – Top Down Design & Storytelling',
-          url: 'https://youtu.be/example-top-down-story'
+          label: 'ACS Recording – Top Down Design & Storytelling [Available now]',
+          url: 'https://drive.google.com/file/d/1cHQsJdsJuLsTHAyCajlGTnAo9rw14AV3/view?usp=sharing'
         }
       ]
     }
@@ -204,7 +204,7 @@ export const days = [
         },
         {
           type: 'video',
-          label: 'ACS Recording – Finish the Story walkthrough',
+          label: 'ACS Recording – Finish the Story walkthrough (coming soon)',
           url: 'https://youtu.be/example-finish-story'
         },
         {
