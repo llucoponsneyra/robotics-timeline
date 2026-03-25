@@ -61,7 +61,7 @@ export const days = [
         },
         {
           type: 'video',
-          label: 'Recorded Intro: Karel & Remote Robotics (ACS)',
+          label: 'Recorded Intro: Karel & Remote Robotics (ACS) [Not Available]',
           url: 'https://youtu.be/example-intro-karel'
         }
       ]
