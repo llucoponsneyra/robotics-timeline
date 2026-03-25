@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/robotics-timeline/static/css/main.954a5190.css",
-    "main.js": "/robotics-timeline/static/js/main.0d456ce9.js",
+    "main.js": "/robotics-timeline/static/js/main.d8d38e34.js",
     "static/js/453.e19e467b.chunk.js": "/robotics-timeline/static/js/453.e19e467b.chunk.js",
     "index.html": "/robotics-timeline/index.html",
     "main.954a5190.css.map": "/robotics-timeline/static/css/main.954a5190.css.map",
-    "main.0d456ce9.js.map": "/robotics-timeline/static/js/main.0d456ce9.js.map",
+    "main.d8d38e34.js.map": "/robotics-timeline/static/js/main.d8d38e34.js.map",
     "453.e19e467b.chunk.js.map": "/robotics-timeline/static/js/453.e19e467b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.954a5190.css",
-    "static/js/main.0d456ce9.js"
+    "static/js/main.d8d38e34.js"
   ]
 }
