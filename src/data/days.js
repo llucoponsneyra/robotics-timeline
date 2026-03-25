@@ -81,7 +81,7 @@ export const days = [
     icon:
       'https://uploads.codehs.com/8491c099a07c2bf7b3d5775dcfe2f07b',
     iframeUrl:
-      'https://drive.google.com/file/d/1cHQsJdsJuLsTHAyCajlGTnAo9rw14AV3/view?usp=sharing',
+      'https://drive.google.com/file/d/1cHQsJdsJuLsTHAyCajlGTnAo9rw14AV3/preview?usp=sharing',
 
     perPeriod: {
       p2: {
