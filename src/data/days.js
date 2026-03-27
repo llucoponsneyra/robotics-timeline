@@ -137,7 +137,7 @@ export const days = [
         },
         {
           type: 'video',
-          label: 'ACS Recording – Top Down Design & Storytelling [Available now]',
+          label: 'Lesson Recording – Top Down Design & Storytelling [Available now]',
           url: 'https://drive.google.com/file/d/1cHQsJdsJuLsTHAyCajlGTnAo9rw14AV3/view?usp=sharing'
         }
       ]
@@ -156,7 +156,7 @@ export const days = [
       'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnA1N3RhZmN2OW1uZ2ZteTRuM2E4cGlsOWdpc3Z3aGozN3V3NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohzdIuqJoo8QdKlnW/giphy.gif',
     icon:
       'https://uploads.codehs.com/8491c099a07c2bf7b3d5775dcfe2f07b',
-    iframeUrl: 'https://codehs.com',
+    iframeUrl: 'https://drive.google.com/file/d/1t1spIzLTGRJDkiLWR1vPmI4MRfNCs_ai/preview?usp=sharing',
 
     perPeriod: {
       p2: {
@@ -204,8 +204,8 @@ export const days = [
         },
         {
           type: 'video',
-          label: 'ACS Recording – Finish the Story walkthrough (coming soon)',
-          url: 'https://youtu.be/example-finish-story'
+          label: 'Lesson Recording – Finish the Story walkthrough [Available Now]',
+          url: 'https://drive.google.com/file/d/1t1spIzLTGRJDkiLWR1vPmI4MRfNCs_ai/view?usp=sharing'
         },
         {
           type: 'glossary',
