@@ -1,225 +1,104 @@
-.realistic-clouds {
+/* Cloud container positioning */
+.cloud-container {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   pointer-events: none;
-  z-index: 1;
-  overflow: hidden;
+  z-index: 2 !important;
 }
 
-.cloud {
-  position: absolute;
-  opacity: 0.7;
+/* Centered above island carousel */
+.cloud-1 {
+  top: 150px;
+  left: 40%;
+  transform: translateX(-120px);
+  animation: cloud-drift-left 60s ease-in-out infinite;
 }
 
-.cloud-part {
+.cloud-2 {
+  top: 150px;
+  left: 40%;
+  transform: translateX(80px);
+  animation: cloud-drift-right 70s ease-in-out infinite;
+}
+
+/* Base cloud layer styling */
+.cloud-layer {
   position: absolute;
+  background: #000; /* BLACK is essential */
   border-radius: 50%;
-  background: radial-gradient(ellipse at center, 
-    rgba(255, 255, 255, 0.25) 0%, 
-    rgba(255, 255, 255, 0.15) 50%, 
-    transparent 100%);
-  filter: blur(25px);
 }
 
-/* Cloud 1 - Top left */
-.realistic-cloud1 {
-  top: 8%;
-  left: -5%;
-  width: 600px;
-  height: 250px;
-  animation: cloudFloat1 45s ease-in-out infinite;
+/* Cloud 1 layers - push black element FAR away */
+.cloud-back {
+  width: 250px;
+  height: 137px;
+  filter: url(#filter-back);
+  box-shadow: 600px 600px 50px 0px rgba(255, 255, 255, 0.8);
+  top: -600px;  /* Much further away */
+  left: -600px;
 }
 
-.realistic-cloud1 .part1 {
-  width: 200px;
-  height: 120px;
-  left: 0;
-  top: 60px;
-}
-
-.realistic-cloud1 .part2 {
-  width: 180px;
-  height: 140px;
-  left: 120px;
-  top: 30px;
-}
-
-.realistic-cloud1 .part3 {
-  width: 220px;
-  height: 130px;
-  left: 220px;
-  top: 50px;
-}
-
-.realistic-cloud1 .part4 {
-  width: 160px;
-  height: 110px;
-  left: 380px;
-  top: 70px;
-}
-
-.realistic-cloud1 .part5 {
-  width: 190px;
-  height: 120px;
-  left: 160px;
-  top: 0px;
-}
-
-/* Cloud 2 - Right side */
-.realistic-cloud2 {
-  top: 35%;
-  right: -8%;
-  width: 500px;
-  height: 220px;
-  animation: cloudFloat2 38s ease-in-out infinite;
-  animation-delay: -15s;
-}
-
-.realistic-cloud2 .part1 {
-  width: 180px;
-  height: 130px;
-  left: 0;
-  top: 50px;
-}
-
-.realistic-cloud2 .part2 {
-  width: 200px;
-  height: 140px;
-  left: 100px;
-  top: 20px;
-}
-
-.realistic-cloud2 .part3 {
-  width: 190px;
+.cloud-mid {
+  width: 225px;
   height: 125px;
-  left: 230px;
-  top: 40px;
+  filter: url(#filter-mid);
+  box-shadow: 580px 580px 45px 0px rgba(255, 255, 255, 0.9);
+  top: -580px;
+  left: -580px;
 }
 
-.realistic-cloud2 .part4 {
-  width: 170px;
-  height: 115px;
-  left: 150px;
-  top: 0px;
+.cloud-front {
+  width: 200px;
+  height: 112px;
+  filter: url(#filter-front);
+  box-shadow: 560px 560px 40px 0px rgba(255, 255, 255, 0.95);
+  top: -560px;
+  left: -560px;
 }
 
-/* Cloud 3 - Bottom center */
-.realistic-cloud3 {
-  bottom: 12%;
-  left: 15%;
-  width: 550px;
-  height: 240px;
-  animation: cloudFloat3 42s ease-in-out infinite;
-  animation-delay: -25s;
+/* Cloud 2 layers - push black element FAR away */
+.cloud2-back {
+  width: 225px;
+  height: 125px;
+  filter: url(#filter-cloud2-back);
+  box-shadow: 570px 570px 47px 0px rgba(255, 255, 255, 0.75);
+  top: -570px;
+  left: -570px;
 }
 
-.realistic-cloud3 .part1 {
-  width: 190px;
-  height: 135px;
-  left: 0;
-  top: 55px;
+.cloud2-mid {
+  width: 200px;
+  height: 112px;
+  filter: url(#filter-cloud2-mid);
+  box-shadow: 550px 550px 42px 0px rgba(255, 255, 255, 0.85);
+  top: -550px;
+  left: -550px;
 }
 
-.realistic-cloud3 .part2 {
-  width: 210px;
-  height: 145px;
-  left: 110px;
-  top: 25px;
-}
-
-.realistic-cloud3 .part3 {
-  width: 195px;
-  height: 130px;
-  left: 250px;
-  top: 50px;
-}
-
-.realistic-cloud3 .part4 {
+.cloud2-front {
   width: 175px;
-  height: 120px;
-  left: 370px;
-  top: 65px;
+  height: 100px;
+  filter: url(#filter-cloud2-front);
+  box-shadow: 530px 530px 37px 0px rgba(255, 255, 255, 0.92);
+  top: -530px;
+  left: -530px;
 }
 
-.realistic-cloud3 .part5 {
-  width: 185px;
-  height: 125px;
-  left: 160px;
-  top: 0px;
-}
-
-.realistic-cloud3 .part6 {
-  width: 165px;
-  height: 115px;
-  left: 300px;
-  top: 10px;
-}
-
-@keyframes cloudFloat1 {
+/* Animations */
+@keyframes cloud-drift-left {
   0%, 100% {
-    transform: translate(0, 0) scale(1);
-    opacity: 0.7;
-  }
-  25% {
-    transform: translate(40px, -15px) scale(1.05);
-    opacity: 0.8;
+    transform: translateX(-120px) translateY(0);
   }
   50% {
-    transform: translate(-30px, 25px) scale(0.95);
-    opacity: 0.6;
-  }
-  75% {
-    transform: translate(50px, 10px) scale(1.02);
-    opacity: 0.75;
+    transform: translateX(-120px) translateY(-8px);
   }
 }
 
-@keyframes cloudFloat2 {
+@keyframes cloud-drift-right {
   0%, 100% {
-    transform: translate(0, 0) scale(1);
-    opacity: 0.65;
+    transform: translateX(80px) translateY(-3px);
   }
-  30% {
-    transform: translate(-35px, 20px) scale(1.03);
-    opacity: 0.75;
-  }
-  60% {
-    transform: translate(25px, -18px) scale(0.97);
-    opacity: 0.55;
-  }
-  85% {
-    transform: translate(-20px, 12px) scale(1.01);
-    opacity: 0.7;
-  }
-}
-
-@keyframes cloudFloat3 {
-  0%, 100% {
-    transform: translate(0, 0) scale(1);
-    opacity: 0.68;
-  }
-  20% {
-    transform: translate(30px, 18px) scale(1.04);
-    opacity: 0.78;
-  }
-  45% {
-    transform: translate(-40px, -22px) scale(0.96);
-    opacity: 0.58;
-  }
-  70% {
-    transform: translate(45px, -10px) scale(1.02);
-    opacity: 0.72;
-  }
-}
-
-@media (max-width: 768px) {
-  .realistic-cloud1,
-  .realistic-cloud2,
-  .realistic-cloud3 {
-    transform: scale(0.7);
+  50% {
+    transform: translateX(80px) translateY(3px);
   }
 }
 
