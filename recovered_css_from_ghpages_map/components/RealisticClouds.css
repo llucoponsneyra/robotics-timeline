@@ -1,0 +1,104 @@
+/* Cloud container positioning */
+.cloud-container {
+  position: fixed;
+  pointer-events: none;
+  z-index: 2 !important;
+}
+
+/* Centered above island carousel */
+.cloud-1 {
+  top: 150px;
+  left: 40%;
+  transform: translateX(-120px);
+  animation: cloud-drift-left 60s ease-in-out infinite;
+}
+
+.cloud-2 {
+  top: 150px;
+  left: 40%;
+  transform: translateX(80px);
+  animation: cloud-drift-right 70s ease-in-out infinite;
+}
+
+/* Base cloud layer styling */
+.cloud-layer {
+  position: absolute;
+  background: #000; /* BLACK is essential */
+  border-radius: 50%;
+}
+
+/* Cloud 1 layers - push black element FAR away */
+.cloud-back {
+  width: 250px;
+  height: 137px;
+  filter: url(#filter-back);
+  box-shadow: 600px 600px 50px 0px rgba(255, 255, 255, 0.8);
+  top: -600px;  /* Much further away */
+  left: -600px;
+}
+
+.cloud-mid {
+  width: 225px;
+  height: 125px;
+  filter: url(#filter-mid);
+  box-shadow: 580px 580px 45px 0px rgba(255, 255, 255, 0.9);
+  top: -580px;
+  left: -580px;
+}
+
+.cloud-front {
+  width: 200px;
+  height: 112px;
+  filter: url(#filter-front);
+  box-shadow: 560px 560px 40px 0px rgba(255, 255, 255, 0.95);
+  top: -560px;
+  left: -560px;
+}
+
+/* Cloud 2 layers - push black element FAR away */
+.cloud2-back {
+  width: 225px;
+  height: 125px;
+  filter: url(#filter-cloud2-back);
+  box-shadow: 570px 570px 47px 0px rgba(255, 255, 255, 0.75);
+  top: -570px;
+  left: -570px;
+}
+
+.cloud2-mid {
+  width: 200px;
+  height: 112px;
+  filter: url(#filter-cloud2-mid);
+  box-shadow: 550px 550px 42px 0px rgba(255, 255, 255, 0.85);
+  top: -550px;
+  left: -550px;
+}
+
+.cloud2-front {
+  width: 175px;
+  height: 100px;
+  filter: url(#filter-cloud2-front);
+  box-shadow: 530px 530px 37px 0px rgba(255, 255, 255, 0.92);
+  top: -530px;
+  left: -530px;
+}
+
+/* Animations */
+@keyframes cloud-drift-left {
+  0%, 100% {
+    transform: translateX(-120px) translateY(0);
+  }
+  50% {
+    transform: translateX(-120px) translateY(-8px);
+  }
+}
+
+@keyframes cloud-drift-right {
+  0%, 100% {
+    transform: translateX(80px) translateY(-3px);
+  }
+  50% {
+    transform: translateX(80px) translateY(3px);
+  }
+}
+
