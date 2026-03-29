@@ -20,13 +20,13 @@ export const days = [
       p2: {
         meetUrl: 'https://meet.google.com/wrz-mwxt-wuh',
         resources: [
-          // add any P2‑specific links here if needed
+          // add any P2-specific links here if needed
         ]
       },
       p3: {
         meetUrl: 'https://meet.google.com/xkm-cidj-eus',
         resources: [
-          // add any P3‑specific links here if needed
+          // add any P3-specific links here if needed
         ]
       }
     },
@@ -108,7 +108,7 @@ export const days = [
 
     lessonPlan: {
       bigIdea:
-        'We write programs that read like a story by decomposing problems into well‑named, reusable functions.',
+        'We write programs that read like a story by decomposing problems into well-named, reusable functions.',
       agenda: [
         'Review Top Down Design using CodeHS materials: 1.6.1 Top Down Design and Decomposition in Karel (video), Check for Understanding, 1.6.2 Quiz, 1.6.3 Hurdle Karel example, and 1.6.4 Karel’s Story practice.',
         'Discuss how function names act like chapter titles, making the program read like a story for humans.',
@@ -118,7 +118,7 @@ export const days = [
       objectives: [
         'Describe Top Down Design as breaking a large problem into smaller subproblems and functions.',
         'Identify when writing a new function improves clarity versus inlining commands.',
-        'Use multi‑line comments to describe big steps in start().',
+        'Use multi-line comments to describe big steps in start().',
         'Write and call custom Karel functions that “tell a story” through their names.'
       ],
       tasks: [
@@ -162,13 +162,13 @@ export const days = [
       p2: {
         meetUrl: 'https://meet.google.com/wrz-mwxt-wuh',
         resources: [
-          // add P2 Finish‑the‑Story specific links when you have them
+          // add P2 Finish-the-Story specific links when you have them
         ]
       },
       p3: {
         meetUrl: 'https://meet.google.com/xkm-cidj-eus',
         resources: [
-          // add P3 Finish‑the‑Story specific links when you have them
+          // add P3 Finish-the-Story specific links when you have them
         ]
       }
     },
@@ -177,7 +177,7 @@ export const days = [
       bigIdea:
         'Finishing a story with Karel shows how well we can design, name, and reuse functions in a larger program.',
       agenda: [
-        'Warm‑up discussion: what makes Karel programs readable like a story (review of function naming and comments).',
+        'Warm-up discussion: what makes Karel programs readable like a story (review of function naming and comments).',
         'ACS Playlist – Exercise 1.5: Finish the Story: read the world description and identify the major tasks.',
         'Students work individually or in pairs to implement the story using Top Down Design.',
         'Share and compare solutions, focusing on clarity of function decomposition rather than just “passing the test”.'
@@ -192,7 +192,7 @@ export const days = [
         'Karel must collect all of the tennis balls in the world.',
         'Karel ends at the final required position facing EAST.',
         'Use comments in start() to label each major task (e.g., // Collect balls on first block).',
-        'Refactor long sequences of commands into well‑named helper functions as needed.'
+        'Refactor long sequences of commands into well-named helper functions as needed.'
       ],
       asyncNotes:
         'Students who are absent should watch the Finish the Story walkthrough recording, complete ACS Exercise 1.5, and submit their solution in CodeHS with screenshots or a link.',
@@ -211,6 +211,206 @@ export const days = [
           type: 'glossary',
           label: 'CodeHS Glossary – Read Like a Story',
           url: 'https://codehs.com/glossary/term/9'
+        }
+      ]
+    }
+  },
+
+  {
+    id: 'tue-31',
+    week: 'Week 2',
+    dateLabel: 'Tue 31',
+    dayLabel: 'Tue',
+    title: 'Super Karel & For Loops',
+    summary:
+      'Build independence with Super Karel and for loops, then apply loop patterns together in a fun ACS challenge.',
+    moodGif:
+      'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3h4dnRrMHRnZ3JiZDc1dDhhNHVobnNwdm91dW53bTV4eHJqYzllbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0HlvycZOszvrIQNy/giphy.gif',
+    icon:
+      'https://uploads.codehs.com/8491c099a07c2bf7b3d5775dcfe2f07b',
+    iframeUrl: 'https://codehs.com/app/assignments/section/849749',
+
+    perPeriod: {
+      p2: {
+        meetUrl: 'https://meet.google.com/wrz-mwxt-wuh',
+        resources: [
+          {
+            type: 'playlist',
+            label: 'Programming with Karel – 1.8 Super Karel',
+            url: 'https://codehs.com'
+          },
+          {
+            type: 'playlist',
+            label: 'Programming with Karel – 1.9 For Loops',
+            url: 'https://codehs.com'
+          },
+          {
+            type: 'playlist',
+            label: 'ACS P2 – Exercise 1.9: For Loops Are Fun (In Class)',
+            url: 'https://codehs.com'
+          }
+        ]
+      },
+      p3: {
+        meetUrl: 'https://meet.google.com/xkm-cidj-eus',
+        resources: [
+          {
+            type: 'playlist',
+            label: 'Programming with Karel – 1.8 Super Karel',
+            url: 'https://codehs.com'
+          },
+          {
+            type: 'playlist',
+            label: 'Programming with Karel – 1.9 For Loops',
+            url: 'https://codehs.com'
+          },
+          {
+            type: 'playlist',
+            label: 'ACS P3 – Exercise 1.9: For Loops Are Fun (In Class)',
+            url: 'https://codehs.com'
+          }
+        ]
+      }
+    },
+
+    lessonPlan: {
+      bigIdea:
+        'New commands and loops help Karel solve repeated patterns more efficiently and with less code.',
+      agenda: [
+        'Students work independently for the first half of class on Programming with Karel lessons 1.8 Super Karel and 1.9 For Loops.',
+        'Pause to review how turnRight() and turnAround() expand what Karel can do in a world.',
+        'Discuss how for loops help us repeat actions cleanly instead of writing the same line many times.',
+        'Work together on ACS Playlist – Exercise 1.9: For Loops Are Fun (In Class), identifying repeated patterns before coding.'
+      ],
+      objectives: [
+        'Use Super Karel commands such as turnRight() and turnAround() correctly.',
+        'Explain when a for loop is a better choice than repeating the same command manually.',
+        'Write for loops that repeat movement or action patterns a set number of times.',
+        'Apply looping to solve a structured Karel challenge with clearer, shorter code.'
+      ],
+      tasks: [
+        'Complete 1.8 Super Karel independently.',
+        'Complete 1.9 For Loops independently.',
+        'Work together on ACS Exercise 1.9: For Loops Are Fun (In Class).',
+        'Identify repeated action patterns and replace them with appropriate for loops.'
+      ],
+      asyncNotes:
+        'Students who are absent should complete 1.8 Super Karel and 1.9 For Loops independently, then attempt ACS Exercise 1.9 For Loops Are Fun and submit their progress in CodeHS.',
+      resources: [
+        {
+          type: 'codehs',
+          label: 'Programming with Karel – 1.8 Super Karel',
+          url: 'https://codehs.com'
+        },
+        {
+          type: 'codehs',
+          label: 'Programming with Karel – 1.9 For Loops',
+          url: 'https://codehs.com'
+        },
+        {
+          type: 'playlist',
+          label: 'ACS Playlist – Exercise 1.9: For Loops Are Fun (In Class)',
+          url: 'https://codehs.com'
+        }
+      ]
+    }
+  },
+
+  {
+    id: 'thu-2',
+    week: 'Week 2',
+    dateLabel: 'Thu 2 Apr',
+    dayLabel: 'Thu',
+    title: 'Finish For Loops & Start If Statements',
+    summary:
+      'Wrap up the for loops challenge, then begin making Karel decisions with if and if/else statements.',
+    moodGif:
+      'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHFxZXBtZG1wZnkwY2QxZ29jbnNwNmx5b2kwNWRpOHByc2J4aXZ6eiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/13HgwGsXF0aiGY/giphy.gif',
+    icon:
+      'https://uploads.codehs.com/8491c099a07c2bf7b3d5775dcfe2f07b',
+    iframeUrl: 'https://codehs.com/app/assignments/section/849749',
+
+    perPeriod: {
+      p2: {
+        meetUrl: 'https://meet.google.com/wrz-mwxt-wuh',
+        resources: [
+          {
+            type: 'playlist',
+            label: 'ACS P2 – Exercise 1.9: For Loops Are Fun (In Class)',
+            url: 'https://codehs.com'
+          },
+          {
+            type: 'playlist',
+            label: 'Programming with Karel – 1.10 If Statements',
+            url: 'https://codehs.com'
+          },
+          {
+            type: 'playlist',
+            label: 'Programming with Karel – 1.11 If/Else Statements',
+            url: 'https://codehs.com'
+          }
+        ]
+      },
+      p3: {
+        meetUrl: 'https://meet.google.com/xkm-cidj-eus',
+        resources: [
+          {
+            type: 'playlist',
+            label: 'ACS P3 – Exercise 1.9: For Loops Are Fun (In Class)',
+            url: 'https://codehs.com'
+          },
+          {
+            type: 'playlist',
+            label: 'Programming with Karel – 1.10 If Statements',
+            url: 'https://codehs.com'
+          },
+          {
+            type: 'playlist',
+            label: 'Programming with Karel – 1.11 If/Else Statements',
+            url: 'https://codehs.com'
+          }
+        ]
+      }
+    },
+
+    lessonPlan: {
+      bigIdea:
+        'After learning to repeat actions with loops, we now help Karel make decisions based on what it senses in the world.',
+      agenda: [
+        'Review and finish ACS Exercise 1.9: For Loops Are Fun from the previous lesson.',
+        'Go over common loop mistakes and look at cleaner ways to structure repeated actions.',
+        'Introduce 1.10 If Statements and show how Karel can check conditions before acting.',
+        'Complete 1.11 If/Else Statements to compare single-condition choices with two possible paths.'
+      ],
+      objectives: [
+        'Refine loop-based solutions by checking for efficiency, accuracy, and readability.',
+        'Use if statements to make Karel respond to conditions in the world.',
+        'Use if/else statements when Karel needs to choose between two possible actions.',
+        'Explain the difference between repeating code with loops and making decisions with conditional statements.'
+      ],
+      tasks: [
+        'Finish and review ACS Exercise 1.9: For Loops Are Fun.',
+        'Complete 1.10 If Statements.',
+        'Complete 1.11 If/Else Statements.',
+        'Test Karel programs to make sure decisions match the world conditions correctly.'
+      ],
+      asyncNotes:
+        'Students who miss class should finish the For Loops Are Fun exercise, then complete 1.10 If Statements and 1.11 If/Else Statements on CodeHS and submit a screenshot of completed progress.',
+      resources: [
+        {
+          type: 'playlist',
+          label: 'ACS Playlist – Exercise 1.9: For Loops Are Fun (In Class)',
+          url: 'https://codehs.com'
+        },
+        {
+          type: 'codehs',
+          label: 'Programming with Karel – 1.10 If Statements',
+          url: 'https://codehs.com'
+        },
+        {
+          type: 'codehs',
+          label: 'Programming with Karel – 1.11 If/Else Statements',
+          url: 'https://codehs.com'
         }
       ]
     }
