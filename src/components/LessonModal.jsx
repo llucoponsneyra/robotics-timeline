@@ -17,6 +17,7 @@ export default function LessonModal({ day, period = 'p2', onClose }) {
   const periodData = perPeriod[period] || {};
   const periodResources = periodData.resources || [];
   const meetUrl = periodData.meetUrl;
+  const iframeUrl = periodData.iframeUrl || day.iframeUrl;
 
   return (
     <div className="lesson-modal-backdrop" onClick={onClose}>
@@ -71,7 +72,6 @@ export default function LessonModal({ day, period = 'p2', onClose }) {
           </div>
 
           <aside className="lesson-side-column">
-            {/* LIVE LESSON / MEET BUTTON */}
             <section className="lesson-section">
               <h3>Live Lesson</h3>
               {meetUrl ? (
@@ -108,7 +108,6 @@ export default function LessonModal({ day, period = 'p2', onClose }) {
               </section>
             )}
 
-            {/* MERGED SHARED + PERIOD-SPECIFIC RESOURCES */}
             <section className="lesson-section">
               <h3>Resources</h3>
               <div className="lesson-resources">
@@ -139,7 +138,7 @@ export default function LessonModal({ day, period = 'p2', onClose }) {
               <h3>Live Lesson View</h3>
               <div className="lesson-iframe-wrapper">
                 <iframe
-                  src={day.iframeUrl}
+                  src={iframeUrl}
                   title={day.title}
                   loading="lazy"
                 />

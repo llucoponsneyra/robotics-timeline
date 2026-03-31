@@ -216,7 +216,7 @@ export const days = [
     }
   },
 
-  {
+    {
     id: 'tue-31',
     week: 'Week 2',
     dateLabel: 'Tue 31',
@@ -228,11 +228,13 @@ export const days = [
       'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3h4dnRrMHRnZ3JiZDc1dDhhNHVobnNwdm91dW53bTV4eHJqYzllbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0HlvycZOszvrIQNy/giphy.gif',
     icon:
       'https://uploads.codehs.com/8491c099a07c2bf7b3d5775dcfe2f07b',
-    iframeUrl: 'https://codehs.com/app/assignments/section/849749',
+    iframeUrl:
+      'https://drive.google.com/file/d/1rS6oFDh8Lte050dykMgxEaHXZjFLjqHB/preview?usp=sharing',
 
     perPeriod: {
       p2: {
         meetUrl: 'https://meet.google.com/wrz-mwxt-wuh',
+        iframeUrl: 'https://drive.google.com/file/d/1rS6oFDh8Lte050dykMgxEaHXZjFLjqHB/preview?usp=sharing',
         resources: [
           {
             type: 'playlist',
@@ -248,11 +250,17 @@ export const days = [
             type: 'playlist',
             label: 'ACS P2 – Exercise 1.9: For Loops Are Fun (In Class)',
             url: 'https://codehs.com'
+          },
+          {
+            type: 'video',
+            label: 'Lesson Recording – Super Karel & For Loops [Available now]',
+            url: 'https://drive.google.com/file/d/1rS6oFDh8Lte050dykMgxEaHXZjFLjqHB/view?usp=sharing'
           }
         ]
       },
       p3: {
         meetUrl: 'https://meet.google.com/xkm-cidj-eus',
+        iframeUrl: 'http://vid.to.come',
         resources: [
           {
             type: 'playlist',
@@ -268,6 +276,11 @@ export const days = [
             type: 'playlist',
             label: 'ACS P3 – Exercise 1.9: For Loops Are Fun (In Class)',
             url: 'https://codehs.com'
+          },
+          {
+            type: 'video',
+            label: 'Lesson Recording – Super Karel & For Loops [To come]',
+            url: 'http://vid.to.come'
           }
         ]
       }
