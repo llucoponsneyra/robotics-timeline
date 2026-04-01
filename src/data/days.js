@@ -255,12 +255,17 @@ export const days = [
             type: 'video',
             label: 'Lesson Recording – Super Karel & For Loops [Available now]',
             url: 'https://drive.google.com/file/d/1rS6oFDh8Lte050dykMgxEaHXZjFLjqHB/view?usp=sharing'
+          },
+          {
+            type: 'video',
+            label: 'Lesson Recording 2 – Super Karel & For Loops [Available now]',
+            url: 'https://drive.google.com/file/d/1rXOTZDgLjOO6IEptQW128VwMyLfUFbGu/view?usp=sharing'
           }
         ]
       },
       p3: {
         meetUrl: 'https://meet.google.com/xkm-cidj-eus',
-        iframeUrl: 'http://vid.to.come',
+        iframeUrl: 'https://drive.google.com/file/d/1ONAWgnfnCyzXXPmZsy_OlbQ23MdF3DZN/preview?usp=sharing',
         resources: [
           {
             type: 'playlist',
@@ -279,8 +284,13 @@ export const days = [
           },
           {
             type: 'video',
-            label: 'Lesson Recording – Super Karel & For Loops [To come]',
-            url: 'http://vid.to.come'
+            label: 'Lesson Recording – Super Karel & For Loops [Available now]',
+            url: 'https://drive.google.com/file/d/1ONAWgnfnCyzXXPmZsy_OlbQ23MdF3DZN/view?usp=sharing'
+          },
+          {
+            type: 'video',
+            label: 'Lesson Recording 2 – Super Karel & For Loops [Available now]',
+            url: 'https://drive.google.com/file/d/1rXOTZDgLjOO6IEptQW128VwMyLfUFbGu/view?usp=sharing'
           }
         ]
       }
