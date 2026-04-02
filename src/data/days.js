@@ -320,21 +320,7 @@ export const days = [
       asyncNotes:
         'Students who are absent should complete 1.8 Super Karel and 1.9 For Loops independently, then attempt ACS Exercise 1.9 For Loops Are Fun and submit their progress in CodeHS.',
       resources: [
-        {
-          type: 'codehs',
-          label: 'Programming with Karel – 1.8 Super Karel',
-          url: 'https://codehs.com'
-        },
-        {
-          type: 'codehs',
-          label: 'Programming with Karel – 1.9 For Loops',
-          url: 'https://codehs.com'
-        },
-        {
-          type: 'playlist',
-          label: 'ACS Playlist – Exercise 1.9: For Loops Are Fun (In Class)',
-          url: 'https://codehs.com'
-        }
+
       ]
     }
   },
@@ -351,7 +337,7 @@ export const days = [
       'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHFxZXBtZG1wZnkwY2QxZ29jbnNwNmx5b2kwNWRpOHByc2J4aXZ6eiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/13HgwGsXF0aiGY/giphy.gif',
     icon:
       'https://uploads.codehs.com/8491c099a07c2bf7b3d5775dcfe2f07b',
-    iframeUrl: 'https://codehs.com/app/assignments/section/849749',
+    iframeUrl: 'https://drive.google.com/file/d/1l37ZZucagB_3aXRhkjM0WUTAvQK--Knq/preview?usp=sharing',
 
     perPeriod: {
       p2: {
@@ -371,6 +357,16 @@ export const days = [
             type: 'playlist',
             label: 'Programming with Karel – 1.11 If/Else Statements',
             url: 'https://codehs.com'
+          },
+          {
+            type: 'video',
+            label: 'Lesson Recording 1– Super Karel & For Loops [Available now]',
+            url: 'https://drive.google.com/file/d/1l37ZZucagB_3aXRhkjM0WUTAvQK--Knq/view?usp=sharing'
+          },
+          {
+            type: 'video',
+            label: 'Lesson Recording 2 – Super Karel & For Loops [Available now]',
+            url: 'https://drive.google.com/file/d/1eDk4psoXs3ymUZNqNa8GPctHQ0g3oxrr/view?usp=sharing'
           }
         ]
       },
@@ -391,6 +387,16 @@ export const days = [
             type: 'playlist',
             label: 'Programming with Karel – 1.11 If/Else Statements',
             url: 'https://codehs.com'
+          },
+          {
+            type: 'video',
+            label: 'Lesson Recording 1– Super Karel & For Loops [Available now]',
+            url: 'https://drive.google.com/file/d/1l37ZZucagB_3aXRhkjM0WUTAvQK--Knq/view?usp=sharing'
+          },
+          {
+            type: 'video',
+            label: 'Lesson Recording 2 – Super Karel & For Loops [Available now]',
+            url: 'https://drive.google.com/file/d/16eJp8hBj66Hzj0wSWKziX49HMQ9XkuCK/view?usp=sharing'
           }
         ]
       }
@@ -420,21 +426,7 @@ export const days = [
       asyncNotes:
         'Students who miss class should finish the For Loops Are Fun exercise, then complete 1.10 If Statements and 1.11 If/Else Statements on CodeHS and submit a screenshot of completed progress.',
       resources: [
-        {
-          type: 'playlist',
-          label: 'ACS Playlist – Exercise 1.9: For Loops Are Fun (In Class)',
-          url: 'https://codehs.com'
-        },
-        {
-          type: 'codehs',
-          label: 'Programming with Karel – 1.10 If Statements',
-          url: 'https://codehs.com'
-        },
-        {
-          type: 'codehs',
-          label: 'Programming with Karel – 1.11 If/Else Statements',
-          url: 'https://codehs.com'
-        }
+  
       ]
     }
   }
